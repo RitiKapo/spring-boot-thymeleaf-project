@@ -20,7 +20,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public List<Employee> findAll() {
-        return employeeRepository.findAll();
+        return employeeRepository.findAllByOrderByFirstNameAsc();
     }
 
     @Override
@@ -48,7 +48,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     public void deleteById(int theId) {
         employeeRepository.deleteById(theId);
     }
-
 }
 
 
