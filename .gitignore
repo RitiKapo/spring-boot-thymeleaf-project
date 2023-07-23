@@ -31,3 +31,4 @@ replay_pid*
 # intellij
 .idea/
 *.iml
+/HELP.md
